@@ -10,10 +10,10 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   devServer: {
-    publicPath: '/src/',
+    publicPath: '/client/src',
     open: true,
     historyApiFallback: true,
-    contentBase: './index'
+    contentBase: '/client/src'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.less', '.scss', '.css']
