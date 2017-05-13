@@ -1,6 +1,6 @@
 var express = require('express')
 var bodyParser = require('body-parser')
-var morgan = require ('morgan')
+var morgan = require('morgan')
 const path = require('path')
 const cors = require('cors')
 const routes = require('./routes/routes.js')
@@ -11,6 +11,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, '/../client/src')))
+app.use(express.static(path.join(__dirname, '/../node_modules/')))
 
 routes(app)
 app.listen(port, () => {
