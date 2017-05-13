@@ -4,16 +4,16 @@ module.exports = {
   context: __dirname,
   entry: ['whatwg-fetch', './client/app/App.jsx'],
   output: {
-    path: path.join(__dirname, '/src'),
+    path: path.join(__dirname, '/client/src'),
     publicPath: '/src/',
     filename: 'bundle.js'
   },
   devtool: '#eval-source-map',
   devServer: {
-    publicPath: '/src/',
+    publicPath: '/client/src',
     open: true,
     historyApiFallback: true,
-    contentBase: './index'
+    contentBase: '/client/src'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.less', '.scss', '.css']
