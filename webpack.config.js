@@ -4,7 +4,7 @@ module.exports = {
   context: __dirname,
   entry: ['whatwg-fetch', './client/app/App.jsx'],
   output: {
-    path: path.join(__dirname, '/src'),
+    path: path.join(__dirname, '/client/src'),
     publicPath: '/src/',
     filename: 'bundle.js'
   },
